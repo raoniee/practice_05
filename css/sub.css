@@ -1,0 +1,132 @@
+/* * {
+    outline: 1px solid #363;
+} */
+
+#subPage {
+    padding: 250px 0 150px 0;
+}
+
+.subMenu h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+
+    margin: 0 0 40px 0;
+}
+
+.subMenu .submenu_map {
+    background: #f5f5f5;
+    border-radius: 20px;
+
+}
+
+.subMenu .submenu_map>ul {
+    display: flex;
+}
+
+.subMenu .submenu_map .home a {
+    position: relative;
+
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 80px;
+    padding: 0 40px 0 60px;
+
+    color: #333;
+}
+
+.subMenu .submenu_map .home a::after {
+    position: absolute;
+    content: "\e902";
+    font-family: xeicon;
+    font-weight: 600;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+
+}
+
+.subMenu .submenu_map ul>li {
+    position: relative;
+}
+
+.subMenu .submenu_map>ul>li~li::before {
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(0, -50%);
+
+    content: "";
+    width: 1px;
+    height: 40px;
+    background: #ddd;
+}
+
+.subMenu .submenu_map button {
+    position: relative;
+    border: none;
+    background: transparent;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+    color: #333;
+
+    width: 250px;
+    padding: 0 0 0 40px;
+
+    cursor: pointer;
+}
+
+.subMenu .submenu_map button::after {
+    content: "\e942";
+    font-family: xeicon;
+    position: absolute;
+    top: 0;
+    right: 40px;
+
+    transition: 0.3s;
+}
+
+.subMenu .submenu_map button.on {
+    outline: 2px dotted #333;
+    color: #00397f;
+}
+
+.subMenu .submenu_map button.on::after {
+    transform: rotate(180deg);
+}
+
+.subMenu .submenu_map .menu_list.on {
+    display: block;
+}
+
+.subMenu .submenu_map .menu_list {
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    display: none;
+}
+
+.subMenu .submenu_map .menu_list li {
+    background: #eaeaea;
+    border: 1px solid #fff;
+    width: 250px;
+}
+
+.subMenu .submenu_map .menu_list li>a {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 0 0 40px;
+}
+
+.subDetails {
+    padding: 100px 0;
+}
+
+.subDetails .board {
+    height: 700px;
+}
